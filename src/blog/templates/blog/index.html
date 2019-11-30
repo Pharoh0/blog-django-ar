@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 {% load static %}
 
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
+
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/main.css' %}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="blog/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="blog/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'blog/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="blog/images/site.webmanifest">
+
+
 </head>
 <body>
-<div>Hellooo</div>
+
+<header>
+    <!-- Start Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'blog/images/favicon-32x32.png' %}" alt="logo" width="32px">
+            مدونة</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        دوراتي
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">دورة بايثون</a>
+                        <a class="dropdown-item" href="#">دورة دجانجو</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">دورة اخري</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">من انا</a>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">تسجيل دخول</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">تسجيل</a></li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+</header>
+
+
+<script src="{% static 'blog/js/jquery-3.4.1.slim.min.js' %}"></script>
+<script src="{% static 'blog/js/popper.min.js' %}"></script>
+<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'blog/js/fontawesome-all.min.js' %}"></script>
+
+
 </body>
 </html>
